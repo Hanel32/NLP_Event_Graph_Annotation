@@ -1,0 +1,117 @@
+Self Summary:
+Traditionally, governers issue pardons around Christmas time. The current governor
+has failed to do so in recent years, and so the author makes a conjecture that
+it is possibly linked to a furlough gone bad that cost Dukakis the presidency in '88.
+
+//Main subject: Clemency process
+//Subevent: Why it's not happening (ghosts)
+
+//Block 1
+E-E-REL:3 SUB    2    //Commutation is a subevent of the pardon process.
+E-E-REL:4 BEFORE 3    //You have to be sentenced before you can be commuted.
+E-E-REL:4 CAUSE  3    //The sentences caused the commute. 
+E-E-REL:1 CAUSE  5    //The "ghost" caused no sentences to be granted.
+E-E-REL:6 BEFORE 5    //He had to take office before being able to grant commutes. 
+  
+//Block 2
+E-E-REL:7 COREF  3    //Commutations coreferences commutes.
+E-E-REL:8 SUB    7    //Release is a subevent of commutation.
+E-E-REL:9 SUB    2    //Pardons are a subevent of the pardon process as well.
+E-E-REL:9 CAUSE  11   //Pardons cause convictions to be nullified.
+
+//Block 3
+E-E-REL:12 COREF 7    //"That" is in reference to the refusal of commutations.
+
+//Block 4
+E-E-REL:13 COREF  2    //Clemency coreferences the pardon process. Both pardons and commutations.
+E-E-REL:14 BEFORE 6    //Their terms were before his term(s).
+E-E-REL:14 COREF  6    //His "term" coreferences taking office.
+
+//Block 5
+E-E-REL:16 COREF 2    //"The idea" is the pardon process
+E-E-REL:17 SUB   1    //The fact that he has made no promises is a subevent of the "haunting"
+E-E-REL:19 COREF 16   //Clemency coref clemency
+
+//Block 6
+E-E-REL:17 CAUSE 23   //Lack of a promise caused a public outry.
+E-E-REL:24 COREF 19   //Clemency coref clemency
+E-E-REL:25 COREF 24   //"Them" refers to clemency
+
+//Block 7
+E-E-REL:27 COREF 17   //The "action" that is lacking is the lack of a promise.
+E-E-REL:27 CAUSE 28   //His lack of action causes inquisitions
+E-E-REL:29 COREF 8    //Usage of power-> Release prisoners
+E-E-REL:30 COREF 25   //Power of clemency
+E-E-REL:31 COREF 30   //Clemecy coref the power
+E-E-REL:32 COREF 29   //He has not "used" his power
+E-E-REL:33 COREF 30   //He hasn't used "any" refers to his power.
+E-E-REL:36 COREF 27   //Reform coreferences action/synonymous.
+
+//Block 8
+E-E-REL:37 COREF 13   //"This" coreferences giving clemency.
+E-E-REL:39 COREF 10   //Convictions
+E-E-REL:40 CAUSE 39   //Fraud caused the conviction
+E-E-REL:33 CAUSE 47   //Lack of action causes him to continue to seek
+E-E-REL:48 COREF 31   //Pardon refers to clemency
+E-E-REL:49 COREF 39   //Convictions
+
+//Block 9
+E-E-REL:50 COREF 4    //Serving coreferences sentencing.
+E-E-REL:51 COREF 49   //Convictions
+E-E-REL:58 COREF 50   //Pardons
+E-E-REL:56 CAUSE 54   //The influence caused the belief that
+E-E-REL:56 CAUSE 17   //The hordon syndrom is causing his inaction.
+
+//Block 10
+E-E-REL:57 COREF 50   //Serving
+E-E-REL:58 SUB   4    //Sentence is a subevent of sentencing
+E-E-REL:59 CAUSE 58   //Murder caused the sentence.
+E-E-REL:60 COREF 52   //Leaving prison coreferences a pardon/commutation
+E-E-REL:61 CAUSE 60   //Furlough caused to leave
+E-E-REL:61 BEFORE 60  //Furlough was before leaving. 
+E-E-REL:60 CAUSE 62   //Leaving caused murder
+E-E-REL:60 CAUSE 63   //Leaving caused rape
+
+//Block 11
+E-E-REL:66 COREF 60   //The "event" was Horton leaving jail
+E-E-REL:66 CAUSE 68   //The "event" caused them to look soft on crime
+E-E-REL:68 CAUSE 71   //Looking soft caused Bush to win.
+E-E-REL:70 COREF 64   //Race coref campaign
+
+//Block 12
+E-E-REL:60 CAUSE 72   //The incident caused the belief
+E-E-REL:73 SUB   72   //The worrying is a subevent of the belief
+E-E-REL:74 COREF 58   //Pardon
+E-E-REL:75 COREF 60   //Turn out badly->Make an event like Horton leaving jail happen
+E-E-REL:76 COREF 75   //"It" is refering to it turning out badly
+E-E-REL:76 CAUSE 77   //"It" causes it to come back
+E-E-REL:77 CAUSE 78   //"It coming back" causes it to haunt him
+E-E-REL:78 COREF 1    //Coreferencing the haunting.
+E-E-REL:79 COREF 70   //Contest refers to a presidential race.
+
+//Block 13
+E-E-REL:60 CAUSE 80   //Incident caused fear
+E-E-REL:72 CAUSE 81   //Belief caused him to agree.
+E-E-REL:80 CAUSE 82   //Fear causes vulnerability
+E-E-REL:83 COREF 68   //Talk refers to their softness.
+
+//Block 14
+E-E-REL:84 COREF 74   //Commutations
+E-E-REL:85 COREF 48   //Pardons
+
+//Block 15
+E-E-REL:86 COREF 84   //Commutations
+E-E-REL:87 COREF 85   //Pardons
+E-E-REL:88 COREF 87   //Pardons
+
+//Block 16
+E-E-REL:89 COREF 86   //Commutations
+E-E-REL:90 COREF 41   //Cases
+E-E-REL:91 COREF 88   //Pardons
+
+//Block 17
+E-E-REL:92 COREF 89   //Commutations
+E-E-REL:93 COREF 14   //Serving coref term
+E-E-REL:94 COREF 60   //Horton coreferences Horton leaving prison.
+E-E-REL:95 COREF 92   //Commutations
+E-E-REL:96 COREF 91   //Pardons

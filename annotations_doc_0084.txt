@@ -1,0 +1,43 @@
+Self-Summary:
+
+A fortune teller from New York, Sylvia Mitchell, was given a harsh sentence and fined $110k
+for taking advantage of her clients and causing them unduly stress. However, her lawyer
+deemed the punishment too harsh given she was offered a plea deal with no jail time originally.
+
+//Main event: The sentencing/trial
+//Sub-events: The explanation of the siutation(s) surrounding the trial
+
+//Block 1
+E-E-REL:7 CAUSE  1       //the conviction caused the sentencing to happen.
+E-E-REL:7 BEFORE 6       //In the same token, the conviction was before the sentencing, and always is.
+E-E-REL:6 COREF  1       //sentenced references the sentencing from the title.
+
+//Block 2
+E-E-REL:10 COREF  1      //In handing down the sentence...
+E-E-REL:9  BEFORE 11     //Handing down -> acknowledgment of effect.
+E-E-REL:14 SUB    15     //The request was a sub-event of the hearing.
+E-E-REL:16 COREF  14     //Explaining the request.
+E-E-REL:17 COREF  1      //Talking about the sentencing from the request.
+
+//Block 3
+//There's nothing really relevant to the summary. Man explaining NY con artists. Not Mitchell.
+
+//Block 4
+E-E-REL:26 CAUSE 7       //Her luring people caused her to be convicted
+
+//Block 5 
+//Nothing again really relevant, talking about the scene in the courtroom.
+
+//Block 6
+E-E-REL:1  CAUSE 42      //The conviction caused her to be sorry for what she'd done
+E-E-REL:43 COREF 26      //what she'd "done" refers to luring people.
+E-E-REL:7 BEFORE 51      //She was convicted before being fined
+E-E-REL:7  CAUSE 51      //She was fined because she was convicted
+E-E-REL:52 SUB   51      //Paying is a subevent of the order, as the order included a sentence.
+E-E-REL:53 COREF 52      //Pay->Restitution refer to the same event in the same time.
+
+//Block 7
+//Talking about plaintiff testifying, not relevant to sentencing
+
+//Block 8
+//Fluff about media coverage, again not relevant to sentencing for summarization.

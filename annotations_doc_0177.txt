@@ -1,0 +1,59 @@
+Self Summary:
+
+This is a news article focusing on the death of a famous Israeli singer, 
+Arik Einstein. It goes on to explain how loved he was by his country, and
+the affect his death has on Israel.
+
+//Obviously his death is the primary event,
+//His affect on Israel is a subevent of his life, so I guess transitively also his death.
+//I suppose the main event of this would be "shape" as that is the after effect of his music.
+
+//Block 1
+E-E-REL:3 SUB    1     //The shaping is a subevent of his life/death.
+E-E-REL:4 COREF  1     //Died coreferences his death
+
+
+//Block 2
+E-E-REL:5 COREF  1     //Death coreferences death
+E-E-REL:6 CAUSE  1     //An aneurism caused his death
+E-E-REL:8 SUB    1     //Being taken and
+E-E-REL:9 SUB    1     //Collapsing are subevents of the time surrounding his death
+E-E-REL:9 BEFORE 8     //Temporally, he collapsed before he was taken.
+
+//Block 3
+E-E-REL:1  CAUSE 14    //Death caused an outpouring
+E-E-REL:1  CAUSE 15    //Death caused grief
+E-E-REL:3  CAUSE 16    //Shaping of music caused nostalgia
+E-E-REL:14 SUB   1     //The outpouring is a subevent of his death
+E-E-REL:15 SUB   1     //The grief is a subevent of his death
+E-E-REL:16 SUB   3     //The Nostalgia is a subevent of his shaping of music culture
+
+//Block 4
+E-E-REL:21 SUB   3     //The derived accompaniment is a subevent of his shaping/influence.
+E-E-REL:3  CAUSE 31    //His shaping symbolized Israel
+
+//Block 5
+E-E-REL:41 SUB   3     //His help is a subevent of his influence
+E-E-REL:41 CAUSE 42    //His help caused a forging of Hebrew culture and Rock.
+
+//Block 6
+//Goes on to more deeply explain 5. For brevity, I'm not including this in the summarization.
+
+//Block 7
+//Goes on to explain more about his forging of Hebrew culture and Rock.
+
+//Block 8
+E-E-REL:56 SUB 1       //More honestly, death is a subevent of life, but because the article's main event is death, life is a subevent.
+E-E-REL:57 SUB 1       //His service was a subevent of his life.
+
+//Block 9
+E-E-REL:58 SUB 1       //His marriage was a subevent of his life
+E-E-REL:59 SUB 58      //First divorce subevent of marriage
+E-E-REL:60 SUB 59      //Remarriage is a subevent of divorce
+E-E-REL:61 SUB 60      //Second divorce is a subevent of the remarriage.
+E-E-REL:62 SUB 58      //The death of his ex-wife is a subevent of their marriage.
+E-E-REL:63 SUB 58      //The kids surviving them is the subevent of their marriage.
+
+//Block 10
+//I feel at this point the story has been accurately summarized; downfall of an icon type information -> negative influence.
+//Remember them as they were, not as they are in old age. A life is not solely defined by its waning years.

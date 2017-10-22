@@ -1,0 +1,60 @@
+Self Summary:
+Two Italian sisters were charged with a count of fraud each for charging $1m to
+a famous chef's credit card while in assistantship, but said that they were offered
+free reign over the card in exchange for their silence about the chef's drug problem,
+leading to their acquittal.
+
+//Main event: The findings of the trial
+//Subevent: The final verdict/acquittal.
+
+//Block 1
+E-E-REL:2 SUB    1   //The verdict is a subevent of the findings.
+E-E-REL:5 SUB    3   //Spending more than $1m in credit cards-> fraud
+E-E-REL:6 SUB    2   //Aquitted-> (not) guilty(verdit)
+E-E-REL:7 COREF  3   //Fraud coreferences fraud
+E-E-REL:2 CAUSE  8   //The verdict caused the charges to be dropped.
+
+//Block 2
+E-E-REL:9  BEFORE 2   //Testifying happened before the verdict
+E-E-REL:9  SUB    2   //Testifying is a subevent of the verdict
+E-E-REL:10 CAUSE  2   //Permission being given to spend money caused the overturn of verdict
+E-E-REL:11 CAUSE  3   //The spending caused the fraud accusation
+E-E-REL:13 SUB    2   //The agreed upon exchange is a sub event of the verdict.
+
+//Block 3
+E-E-REL:16 BEFORE 19   //Her usage of drugs was before admitting it
+E-E-REL:20 COREF  16   //Usage coreferences itself
+E-E-REL:23 CAUSE  19   //The revelation about the "Higella" email caused the admittance.
+
+//Block 4
+//I'm not entirely sure if the husband information is relevant.
+//The main "case in point" is that the sisters were acquitted when cocaine use was proven.
+//Depending on if it was meant to be made a tabloid/informational piece, etc, you could map
+//events differently.
+E-E-REL:29 COREF  20   //Usage coreferences itself. 
+
+//Block 5
+E-E-REL:41 SUB     19  //The denial is a subevent of the admittance; Though she had
+                       //previously used drugs, it wasn't a lasting habit needing to be masked.
+E-E-REL:42 OVERLAP 41  //Denied abusing. Denied is important to the story.
+E-E-REL:44 COREF   29  //Usage coreferences itself.
+E-E-REL:45 SUB     44  //Her caring for her husband was a subevent of her usage.
+E-E-REL:48 SUB     45  //Her husband dying is a subevent of her caring for him.
+
+//Block 6
+E-E-REL:49 COREF   2   //The verdict coreferences "not guilty"
+E-E-REL:52 COREF   45  //Her civic duty coreferences her care
+E-E-REL:53 SUB     2   //Her being vilified is a subevent of the verdict
+
+//Block 7
+E-E-REL:57 COREF   3   //Spending coreferences fraud
+
+//Block 8
+E-E-REL:63 COREF   2   //Verdict coref verdict
+
+//Block 9
+E-E-REL:2  CAUSE   71  //Verdict caused relief
+E-E-REL:72 COREF   2   //Verdict coref verdict. 
+
+
+

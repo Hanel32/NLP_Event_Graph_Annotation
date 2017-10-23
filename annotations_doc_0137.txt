@@ -1,0 +1,119 @@
+Summary:
+Talking about providing insurance to those farmers in Kenya in the most need.
+
+//Title copy
+E-E-REL:4 COREF 1    //Identity relations
+E-E-REL:5 COREF 2    //Identity relations
+E-E-REL:6 COREF 3    //Identity relations
+
+//Block 1
+E-E-REL:7 COREF 4     //Signs -> signed
+E-E-REL:8 CAUSE 7     //Agreements caused the signatures
+E-E-REL:9 COREF 6     //Expand
+E-E-REL:9 CAUSE 10    //An expansion in access causes more access. Circular?
+E-E-REL:9 CAUSE 11    //Expansion would cause more help
+E-E-REL:9 CAUSE 12    //Expansion would cause crops to be more protected
+E-E-REL:13 CAUSE 8    //The risks caused for the agreements
+E-E-REL:14 SUB   13   //Natural disasters are a subevent from the risks
+
+//Block 2
+E-E-REL:8  CAUSE  15    //The agreements caused the grants to be issued.
+E-E-REL:16 SUB    8     //The insurance initiative is a subevent of the "deal"
+E-E-REL:17 SUB    8     //Livestock index insurace is a subevent of the "deal"
+E-E-REL:18 SUB    8     //The MicroEnsure project is also a subevent.
+E-E-REL:19 COREF  16    //Talking about
+E-E-REL:19 COREF  17    //All three
+E-E-REL:19 COREF  18    //As one.
+E-E-REL:19 CAUSE  20    //The partnerships cause highlight
+E-E-REL:21 COREF  9     //Their commitment = the expansion embodiment
+E-E-REL:22 COREF  9     //Identity
+E-E-REL:13 CAUSE  23    //Risks/disasters cause need
+E-E-REL:24 COREF  22    //To facilitate, you expand; synonymous
+E-E-REL:24 CAUSE  25    //Expansion causes access.
+E-E-REL:25 CAUSE  26    //Access causes productivity
+E-E-REL:26 CAUSE  27    //Productivity caused an increase in livelihood
+E-E-REL:26 CAUSE  28    //Productivity caused an increase in security
+E-E-REL:8  CAUSE  29    //The agreements caused them to be thankful
+E-E-REL:31 SUB    8     //Provisions were a subevent of the agreement
+E-E-REL:32 CAUSE  8     //Support caused the program to happen.
+E-E-REL:33 COREF  8     //Program => Agreements 
+
+//Block 3
+E-E-REL:35 CAUSE 34     //Program caused grants
+E-E-REL:35 COREF 33     //Program
+E-E-REL:36 SUB   35     //Bringing weather related ect is a subevent
+E-E-REL:37 COREF 22     //Implementation references expansion.
+E-E-REL:38 COREF 19     //The projects
+E-E-REL:40 SUB   38     //Development is a subevent of the project
+E-E-REL:40 CAUSE 41     //Development causes increase of expertise
+E-E-REL:40 CAUSE 42     //^- inclusion? 41 and 42 are really the same event
+E-E-REL:42 CAUSE 43     //Expertise causes benefit
+E-E-REL:48 COREF 38     //Projects
+
+//Block 4
+E-E-REL:50 COREF 15     //Confer/grants
+E-E-REL:50 CAUSE 52     //Grants cause help
+E-E-REL:50 CAUSE 53     //Grants cause insurance to be available
+
+//Block 5
+E-E-REL:54 COREF 50     //Confer
+E-E-REL:54 CAUSE 55     //Grants cause expectation
+E-E-REL:56 SUB   55     //Helping to ensure is a subevent
+E-E-REL:57 SUB   55     //Subevent of expectation.
+
+//Block 6
+E-E-REL:58 COREF 54     //Confer
+E-E-REL:58 CAUSE 59     //Grants cause help
+E-E-REL:60 SUB   59     //Insurance is subevent of help
+
+//Block 7
+E-E-REL:61 COREF  35    //Program
+E-E-REL:62 BEFORE 61    //Establishment -> Program
+E-E-REL:61 CAUSE  63    //Program assisted
+E-E-REL:64 SUB    63    //Development a subevent of assisting
+E-E-REL:65 COREF  14    //Natural disasters
+E-E-REL:66 COREF  13    //Risks
+E-E-REL:66 SUB    67    //Risks are a subevent of availability
+
+//Block 8
+E-E-REL:68 COREF  58    //Funds == Grants
+E-E-REL:68 CAUSE  69    //Funds cause activities
+E-E-REL:70 SUB    69    //Building subevent of activities
+E-E-REL:71 SUB    69    //Development subevent of activities
+E-E-REL:72 SUB    69    //""
+E-E-REL:73 SUB    69    //""
+E-E-REL:68 CAUSE  74    //Funds cause capacity ++
+E-E-REL:74 CAUSE  75    //Capacity causes provision.
+
+//Block 9 
+E-E-REL:76 COREF  61    //Insurance coreferences the program
+E-E-REL:77 SUB    76    //Events are subevents of insurance (I.E. why you need insurance)
+E-E-REL:78 SUB    77    //Storms
+E-E-REL:79 SUB    77    //Droughts
+
+//Block 10
+E-E-REL:76 CAUSE 82     //Insurance causes elimination
+E-E-REL:83 SUB   82     //Need is subevent of elimination
+E-E-REL:84 SUB   82     //Verification subevent of elimination
+E-E-REL:85 SUB   82     //Reduction subevent of elimination
+E-E-REL:86 SUB   82     //It being easier is a subevent of elimation
+E-E-REL:86 COREF 87     //Easier -> Services
+
+//Block 11
+E-E-REL:89 COREF 68     //Committed == Grants
+
+//Block 12
+E-E-REL:91 COREF 68     //Provision == Grants
+
+ 
+
+
+
+
+
+
+
+
+
+
+
